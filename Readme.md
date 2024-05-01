@@ -1,6 +1,6 @@
 # Social Media Application
 
-Welcome to the "Build Your Own Social media application" project! This project aims to recreate the core functionality of the popular social media platform Twitter(now X.com). Users can register, log in, post tweets, follow other users, and interact with their timeline. This repository contains the codebase and configurations for both the frontend and backend of the Twitter Clone project.
+This project aims to recreate the core functionality of the popular social media platform Twitter(now X.com). Users can register, log in, post tweets, follow other users, and interact with their timeline. This repository contains the codebase and configurations for both the frontend and backend of the Twitter Clone project.
 <br>
 
 ## Table of Contents
@@ -43,58 +43,47 @@ The project utilizes the following technologies:
 
 <br>
 
-## Future Enhancement
-
-- Functionality for **_Image and Video_** post. Image and video stored on the cloud and rendered into client side using **_signed URL_**
-- Social login using Google
-
 ## Running the Application using docker
 
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/abhijeetnishal/Build-Your-Own-X.git
+   git clone https://github.com/abhijeetnishal/social-media-app.git
 ```
 
-2. Move to the url-shortener folder using below command:
-
-```bash
-    cd url-shortener
-```
-
-3. Move to server directory using below command:
+2. Move to server directory using below command:
 
 ```bash
     cd server
 ```
 
-4. Create a .env file in root directory of server and copy contents of .env.example file to .env file and add MongoDB URI to setup database.
-5. Make sure that docker is installed in your system. Run the below command to build docker image for server:
+3. Create a .env file in root directory of server and copy contents of .env.example file to .env file and add MongoDB URI to setup database.
+4. Make sure that docker is installed in your system. Run the below command to build docker image for server:
 
 ```bash
     docker build -t your_server_image_name .
 ```
 
-6. Run a container based on your_server_image_name using below command, exposing port 8080 on the host machine and mapping it to port 8080 inside the container
+5. Run a container based on your_server_image_name using below command, exposing port 8080 on the host machine and mapping it to port 8080 inside the container
 
 ```bash
     docker run -p 8080:8080 your_server_image_name
 ```
 
-7. Now move to client directory using below command:
+6. Now move to client directory using below command:
 
 ```bash
     cd ../client
 ```
 
-8. Create a .env file in root directory of client and copy contents of .env.example file to .env file and add your backend URL.
-9. Run the below command to build docker image for client:
+7. Create a .env file in root directory of client and copy contents of .env.example file to .env file and add your backend URL.
+8. Run the below command to build docker image for client:
 
 ```bash
     docker build -t your_client_image_name .
 ```
 
-10. Run a container based on your_client_image_name using below command:
+9. Run a container based on your_client_image_name using below command:
 
 ```bash
     docker run -p 3000:3000 your_client_image_name
@@ -107,48 +96,42 @@ The project utilizes the following technologies:
 1. Clone the repository to your local machine using:
 
 ```bash
-    git clone https://github.com/abhijeetnishal/Build-Your-Own-X.git
+    git clone https://github.com/abhijeetnishal/social-media-app.git
 ```
 
-2. Move to the url-shortener folder using command:
-
-```bash
-    cd social-media-app
-```
-
-3. Move to server directory:
+2. Move to server directory:
 
 ```bash
     cd server
 ```
 
-4. To install dependencies run the below command:
+3. To install dependencies run the below command:
 
 ```bash
     npm install
 ```
 
-5. Create a .env file in root directory of server and copy contents of .env.example file to .env file and add your secret keys.
-6. Start the server using command:
+4. Create a .env file in root directory of server and copy contents of .env.example file to .env file and add your secret keys.
+5. Start the server using command:
 
 ```bash
     npm start
 ```
 
-7. Now move to client folder:
+6. Now move to client folder:
 
 ```bash
     cd ../client
 ```
 
-8. Create a .env file in root directory of client and copy contents of .env.example file to .env file and add your running backend URL.
-9. To install dependencies run the below command:
+7. Create a .env file in root directory of client and copy contents of .env.example file to .env file and add your running backend URL.
+8. To install dependencies run the below command:
 
 ```bash
     npm install
 ```
 
-10. start the next.sj app using command:
+9. start the next.js app using command:
 
 ```bash
     npm run dev
@@ -164,8 +147,3 @@ The project utilizes the following technologies:
   3. In Home page create, schedule, edit or delete post for our own and and see posts of following users.
   4. In profile page, you can see followers and following list in chronological manner.
      <br>
-
-## Contact
-
-- If you have any questions or suggestions with the app, please feel free to contact on LinkedIn: https://www.linkedin.com/in/abhijeetkumar7565/
-- I appreciate your feedback and would love to hear from you!
